@@ -1,0 +1,6 @@
+src/
+doc/
+test/
+tmp/
+
+.config.local.sh
