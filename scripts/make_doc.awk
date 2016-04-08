@@ -38,21 +38,21 @@ BEGIN {
 	skipNextCount = 0
 }
 
-NR == 46																						{ mute(); }
-/<!-- START: ForeSee/																{ assertNR(48); }
-/<!-- END: ForeSee/																	{ assertNR(73); }
-NR == 77																						{ unmute(); }
-/<table class="titleTable"/													{ if (assertNR(81)) mute(); }
-NR == 161																						{ unmute(); }
-/<td class="titleTableSubTitle"/										{ assertNR(163); }
-NR == 205																						{ skip(3); }
-/<div class="maincontainer"/												{ assertNR(208); }
-/id="cls_name" href="(package|index|all-index)/			{ assertNR(215); } # Package and index files.
-/<div id="badgeAnchorSupport"/											{ if (assertNR(230)) sub(/<div id="badgeAnchorSupport".*/, "", $0); } # Regular files.
-NR == 231																						{ skip(1); }
-/<div class="contentfooter"/												{ mute(); }
-/<div class="footer"/																{ skip(2); }
-/help\/badge(\/v3)?\/ion/														{ skip(1); }
+NR == 46                                            { mute(); }
+/<!-- START: ForeSee/                               { assertNR(48); }
+/<!-- END: ForeSee/                                 { assertNR(73); }
+NR == 77                                            { unmute(); }
+/<table class="titleTable"/                         { if (assertNR(81)) mute(); }
+NR == 161                                           { unmute(); }
+/<td class="titleTableSubTitle"/                    { assertNR(163); }
+NR == 205                                           { skip(3); }
+/<div class="maincontainer"/                        { assertNR(208); }
+/id="cls_name" href="(package|index|all-index)/     { assertNR(215); } # Package and index files.
+/<div id="badgeAnchorSupport"/                      { if (assertNR(230)) sub(/<div id="badgeAnchorSupport".*/, "", $0); } # Regular files.
+NR == 231                                           { skip(1); }
+/<div class="contentfooter"/                        { mute(); }
+/<div class="footer"/                               { skip(2); }
+/help\/badge(\/v3)?\/ion/                           { skip(1); }
 
 {
 	if (skipNextCount == 0)
