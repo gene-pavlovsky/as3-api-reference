@@ -14,9 +14,9 @@ Contains `TocGen` tool for generating the help TOC file suitable for use with [F
 Downloads
 ---------
 Latest version: March 2016 (Flash 21.0, AIR 21.0)
-- [Base API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_base.fdz?raw=true) - Commonly used AS3 API Reference, excluding Flex (recommended for AIR developers).
-- [Base+Flex API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_base+flex.fdz?raw=true) - Commonly used AS3 API Reference, including Flex (recommended for Flex developers).
-- [Full API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_full.fdz?raw=true) - Entire AS3 API Reference (recommended for Enterprise developers).
+- [Base API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_base.7z?raw=true) - Commonly used AS3 API Reference, excluding Flex (recommended for AIR developers).
+- [Base+Flex API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_base+flex.7z?raw=true) - Commonly used AS3 API Reference, including Flex (recommended for Flex developers).
+- [Full API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_full.7z?raw=true) - Entire AS3 API Reference (recommended for Enterprise developers).
 - [Complete ZIP of the repository](https://github.com/gene-pavlovsky/as3-api-reference/archive/master.zip)
 
 Scripts usage
