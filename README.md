@@ -32,5 +32,6 @@ The scripts are written in `bash` and `awk` and should be able to run on `UNIX` 
 5. Run `scripts/make_doc.sh` to optimize the html files from `src/`, outputting into `doc/`. The optimizing itself is done by `scripts/make_doc.awk`. This will take a long time.
 6. (optional) Run `scripts/verify_doc.sh` to make sure that every file in `src/` has a matching file in `doc/`. This will take a while.
 7. Run `bin/TocGen.exe`, fill in the full path to the `doc/` directory, and click `Generate`. This will take a while.
-8. (optional) Edit `config.sh`, set `prune_packages` to the list of packages you don't want, then run `scripts/prune_doc.sh` to remove them and update the TOC file.
-9. Copy `doc/` wherever you want and use them with [FlashDevelop](http://flashdevelop.org/) via [OpenTheDoc](http://www.flashdevelop.org/community/viewtopic.php?t=2318) plug-in or a web browser.
+8. Run `scripts/fix_toc.sh` to fix a problem with the links in the TOC file. If following the next step, this script will be ran automatically.
+9. (optional) Edit `config.sh`, set `prune_packages` to the list of packages you don't want, then run `scripts/prune_doc.sh` to remove them and update the TOC file.
+10. Copy `doc/` wherever you want and use them with [FlashDevelop](http://flashdevelop.org/) via [OpenTheDoc](http://www.flashdevelop.org/community/viewtopic.php?t=2318) plug-in or a web browser.
