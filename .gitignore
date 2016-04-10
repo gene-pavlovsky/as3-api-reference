@@ -2,5 +2,6 @@ src/
 doc/
 test/
 tmp/
+trash/
 
 .config.local.sh
