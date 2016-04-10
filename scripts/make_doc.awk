@@ -32,7 +32,7 @@ function assertNR(value) {
 
 BEGIN {
 	# Number of assertions (assertNR() calls).
-	numAsserts = 6
+	numAsserts = 5
 	numSucceeded = 0
 	# Controls printing lines: 0 - print, negative - don't print, positive - don't print but decrement by 1 per line.
 	skipNextCount = 0
@@ -47,8 +47,7 @@ NR == 161                                           { unmute(); }
 /<td class="titleTableSubTitle"/                    { assertNR(163); }
 NR == 205                                           { skip(3); }
 /<div class="maincontainer"/                        { assertNR(208); }
-/id="cls_name" href="(package|index|all-index)/     { assertNR(215); } # Package and index files.
-/<div id="badgeAnchorSupport"/                      { if (assertNR(230)) sub(/<div id="badgeAnchorSupport".*/, "", $0); } # Regular files.
+/<div id="badgeAnchorSupport"/                      { sub(/<div id="badgeAnchorSupport".*/, "", $0); }
 NR == 231                                           { skip(1); }
 /<div class="contentfooter"/                        { mute(); }
 /<div class="footer"/                               { skip(2); }
