@@ -6,3 +6,4 @@
 
 *.dll binary
 *.exe binary
+*.7z binary
