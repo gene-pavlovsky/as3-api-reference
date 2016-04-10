@@ -15,7 +15,7 @@ Downloads
 ---------
 Latest version: March 2016 (Flash 21.0, AIR 21.0)
 - [Base API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_base.7z?raw=true) - Base AS3 API Reference, excluding Flex (recommended for AIR developers).
-- [Flex API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_flexonly.7z?raw=true) - Flex API Reference (recommended as add-on to base for AIR developers who occasionally use Flex).
+- [Flex API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_flexonly.7z?raw=true) - Flex API Reference (recommended as add-on to base for AIR+occasional Flex developers).
 - [Base+Flex API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_base+flex.7z?raw=true) - Base AS3 API and Flex API Reference (recommended for Flex developers).
 - [Full API Reference 7z](https://github.com/gene-pavlovsky/as3-api-reference/blob/master/dist/doc_full.7z?raw=true) - Entire AS3 API Reference (recommended for Enterprise developers).
 - [Complete ZIP of the repository](https://github.com/gene-pavlovsky/as3-api-reference/archive/master.zip)
