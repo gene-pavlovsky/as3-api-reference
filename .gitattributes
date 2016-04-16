@@ -3,7 +3,3 @@
 *.awk text eol=lf
 *.sed text eol=lf
 *.sh text eol=lf
-
-*.dll binary
-*.exe binary
-*.7z binary
