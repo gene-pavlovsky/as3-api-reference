@@ -34,9 +34,9 @@ verbose=false
 # Options for `scripts/prune_doc.sh`
 # ==================================
 # List of top-level AS3 packages to remove from the processed files directory. 
-#prune_packages='adobe coldfusion com fl ga lc org xd' # Remove most extra packages, but keep Flex.
-#prune_packages='adobe coldfusion com fl ga lc mx org spark xd' # Remove most extra packages and Flex.
-prune_packages='adobe air coldfusion com fl flash flashx ga lc org xd' # Remove everything but Flex.
+#prune_packages='adobe coldfusion com fl ga lc org xd' # Remove most extra packages, but keep Flex (doc_base+flex).
+#prune_packages='adobe coldfusion com fl ga lc mx org spark xd' # Remove most extra packages and Flex (doc_base).
+prune_packages='adobe air coldfusion com fl flash flashx ga lc org xd' # Remove everything but Flex (doc_flex).
 # FlashDevelop OpenTheDoc plug-in help TOC file (Flex help TOC file).
 prune_toc_file='otd_toc.xml'
 
